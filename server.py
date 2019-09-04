@@ -10,7 +10,7 @@ class HelloWorld(object):
   def get_tag(self):
     global cont
     cont += 1
-    return "989" + str(cont)
+    return "Tag " + str(cont)
 
 daemon = Pyro4.Daemon()
 uri = daemon.register(HelloWorld)
